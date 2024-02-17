@@ -1,0 +1,9 @@
+1 - Criação do Projeto
+npx react-native@latest init vendasApp
+
+2 - Criação da Estrutura de Pastas
+- Criar -> src -> modules (Separando aplicação por módulo. Ex: login, profile, etc)
+               -> shared (Onde ficará tudo que for compartilhado em todo projeto. Ex: components, themes, etc)
+               -> App.tsx (Remover o App.tsx da raiz do projeto. Lembrar de atualizar o index.js para o App.tsx dentro de src)
+
+

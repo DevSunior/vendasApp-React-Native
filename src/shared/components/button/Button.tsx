@@ -1,5 +1,5 @@
 import { TouchableOpacityProps } from "react-native/types"
-import { ContainerButton, SecondaryButton } from "./button.style";
+import { ContainerButton, GradientButton, SecondaryButton } from "./button.style";
 import Text from "../text/Text";
 import { theme } from "../../themes/theme";
 import { textTypes } from "../text/textTypes";
@@ -34,12 +34,18 @@ const Button = ({title, margin, type, ...props}: ButtonProps) => {
                 margin={margin}
                 {...props}
                 >
-                    <Text
-                    color={theme.colors.neutralTheme.white}
-                    type={textTypes.BUTTON_BOLD}
+                    <GradientButton
+                    start={{x:0.0, y:0.0}}
+                    end={{x: 1.0, y:1.0}}
+                    colors={[theme.colors.purpleTheme.purple80, theme.colors.pinkTheme.pink80]}
                     >
-                        {title}
-                    </Text>
+                        <Text
+                        color={theme.colors.neutralTheme.white}
+                        type={textTypes.BUTTON_BOLD}
+                        >
+                            {title}
+                        </Text>
+                    </GradientButton>
                 </ContainerButton>
             )
     }

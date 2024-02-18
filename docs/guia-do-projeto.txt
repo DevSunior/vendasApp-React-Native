@@ -18,3 +18,9 @@ npm install @types/styled-components-react-native -D
   }
 
 
+5 - Criação de components (arquivo components.txt);
+
+6 - Criação dos themes (colors.ts e theme.ts, dentro de shared)
+
+7 - Criação do enum textTypes (acredito que será aperfeiçoada mais a frente)
+

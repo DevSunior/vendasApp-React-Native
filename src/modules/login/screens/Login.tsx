@@ -14,7 +14,11 @@ const Login = () => {
             <ContainerLogin>
                 <Text>Login</Text>
                 <Input/>
-                <Button margin="15px" title="ENTRAR" onPress={handleOnPress}/>
+                <Button
+                margin="15px"
+                title="ENTRAR"
+                onPress={handleOnPress}
+                />
             </ContainerLogin>
         </View>
     )

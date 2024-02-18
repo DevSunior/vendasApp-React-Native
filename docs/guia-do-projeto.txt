@@ -24,3 +24,16 @@ npm install @types/styled-components-react-native -D
 
 7 - Criação do enum textTypes (acredito que será aperfeiçoada mais a frente)
 
+8 - Adicionando fontes externas:
+- Crie a pasta assets -> fonts -> fontes que deseja utilizar (arquivos .ttf)
+- Crie o arquivo react-native-config.js na pasta raiz do projeto com a seguinte configuração:
+module.exports = {
+    project: {
+        ios: {},
+        android: {}
+    },
+    assets: ['./src/assets/fonts'],
+}
+- execute o comando npx react-native-asset
+- faça novamente o build da aplicação com npm start e npm run android
+

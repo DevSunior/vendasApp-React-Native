@@ -18,7 +18,7 @@ const Button = ({title, margin, ...props}: ButtonProps) => {
         >
             <Text
             color={theme.colors.neutralTheme.white}
-            type={textTypes.TITLE}
+            type={textTypes.BUTTON_BOLD}
             >
                 {title}
             </Text>

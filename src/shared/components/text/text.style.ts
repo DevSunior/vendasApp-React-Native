@@ -2,11 +2,12 @@ import styled from "styled-components/native";
 
 interface ContainerTextProps {
     color?: string,
-    fontSize: string
+    fontSize: string,
+    fontFamily: string
 }
 
 export const ContainerText = styled.Text<ContainerTextProps>`
     ${(props) => (props.color ? `color: ${props.color};` : '' )}
-    font-family:Poppins-BOLD;
-    font-size: ${(props) => (props.fontSize)}
+    font-size: ${(props) => (props.fontSize)};
+    font-family: ${(props) => (props.fontFamily)};
 `

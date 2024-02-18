@@ -37,3 +37,5 @@ module.exports = {
 - execute o comando npx react-native-asset
 - faça novamente o build da aplicação com npm start e npm run android
 
+9 - Adicionando ao enum textTypes todos os tipos do projeto
+

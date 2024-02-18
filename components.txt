@@ -1,0 +1,39 @@
+Trabalhando com components:
+
+Basicamente a estrutura do projeto referencia dois tipos de arquivo, o component e seu style. No projeto o style está sendo feito por style component.
+
+Tomando como exemplo o Input:
+- Na pasta components eu crio um diretório chamado input;
+- Dentro deste diretório eu crio dois arquivos: o Input.tsx (Que será o Component que será utilizado) e o input.style.ts (que será o arquivo de estilização do component Input);
+
+input.style.ts:
+import styled from "styled-components/native";
+
+export const ContainerInput = styled.TextInput`
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    background-color: white;
+    color: #888;
+    border-radius: 5px;
+`
+- Dentro desse arquivo eu crio a constante ContainerInput que servirá de base estilizada para o arquivo Input.tsx.
+
+-----------------------------------------------------------------------------
+
+Input.tsx:
+import { TextInputProps } from "react-native";
+import { ContainerInput } from "./input.style";
+
+interface InputProps extends TextInputProps {}
+
+const Input = ({...props}: InputProps) => {
+
+    return (
+        <ContainerInput {...props}/>
+    )
+}
+
+export default Input;
+
+- Dentro deste arquivo eu crio a constante Input (Que será utilizada na sintaxe <Input/> dentro dos módulos). Eu acrescento a tipagem nativa dos props utilizando o TextInputProps. Com isso o Input que criei herdará todos os métodos e props que o TextInput do React Native possui.

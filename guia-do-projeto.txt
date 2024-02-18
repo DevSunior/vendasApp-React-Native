@@ -6,4 +6,15 @@ npx react-native@latest init vendasApp
                -> shared (Onde ficará tudo que for compartilhado em todo projeto. Ex: components, themes, etc)
                -> App.tsx (Remover o App.tsx da raiz do projeto. Lembrar de atualizar o index.js para o App.tsx dentro de src)
 
+3 - Adicionando styled-components
+npm install --save styled-components
+npm install @types/styled-components-react-native -D
+
+4 - Adicionar ao arquivo tsconfig.json:
+"compilerOptions": {
+    "types": [
+      "@types/styled-components-react-native"
+    ]
+  }
+
 

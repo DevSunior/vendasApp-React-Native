@@ -41,4 +41,5 @@ module.exports = {
 
 10 - Instalação da lib de linear gradient:
 - npm install react-native-linear-gradient --save
+- Instale os pods do gradient -> cd ios; pod install;
 - Execute a build novamente (npm start e npm run android/ios)

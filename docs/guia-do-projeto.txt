@@ -43,3 +43,5 @@ module.exports = {
 - npm install react-native-linear-gradient --save
 - Instale os pods do gradient -> cd ios; pod install;
 - Execute a build novamente (npm start e npm run android/ios)
+
+11 - Configurando botões (disabled, loading)

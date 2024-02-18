@@ -13,8 +13,10 @@ const Login = () => {
     return (
         <View>
             <ContainerLogin>
-                <Text>Login</Text>
-                <Input/>
+                <Input
+                title="Email:"
+                placeholder="Digite seu email"
+                />
                 <Button
                 margin="15px"
                 title="ENTRAR"

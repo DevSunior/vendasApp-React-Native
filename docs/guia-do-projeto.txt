@@ -39,3 +39,6 @@ module.exports = {
 
 9 - Adicionando ao enum textTypes todos os tipos do projeto
 
+10 - Instalação da lib de linear gradient:
+- npm install react-native-linear-gradient --save
+- Execute a build novamente (npm start e npm run android/ios)

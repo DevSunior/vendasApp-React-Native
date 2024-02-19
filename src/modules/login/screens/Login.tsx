@@ -17,6 +17,11 @@ const Login = () => {
                 title="Email:"
                 placeholder="Digite seu email"
                 />
+                <Input
+                secureTextEntry
+                title="Senha:"
+                placeholder="Digite sua senha"
+                />
                 <Button
                 margin="15px"
                 title="ENTRAR"

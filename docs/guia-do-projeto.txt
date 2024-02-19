@@ -45,3 +45,26 @@ module.exports = {
 - Execute a build novamente (npm start e npm run android/ios)
 
 11 - Configurando botões (disabled, loading)
+
+12 - Configurando Títulos e Mensagens de erro no input;
+
+13 - Instalando lib de icons:
+- npm install react-native-vector-icons
+- npm i --save-dev @types/react-native-vector-icons
+- Site para icons: https://icomoon.io/
+- No site selecionar a opção 'Iconmoon App'
+- Na aba Iconmoon Free, selecionar a opção 'Select All' no menu hamburguer no canto superior direito;
+- Selecionar 'Generate Font' no canto inferior direito;
+- Selecionar 'Download' no canto inferior esquerdo;
+- Após o donwload e extração do arquivo zip, mova o arquivo 'selection.json' para raiz do projeto;
+- Dentro da pasta fonts selecione o arquivo icomoon.ttf e mova para pasta src/assets/fonts;
+- Crie o arquivo Icon.tsx dentro de src/shared/components/icon com a seguinte configuração:
+----------------------------------------------------------------------
+import { createIconSetFromIcoMoon } from "react-native-vector-icons";
+import icoMoonConfig from '../../../../selection.json'
+
+export const Icon = createIconSetFromIcoMoon(icoMoonConfig);
+----------------------------------------------------------------------
+
+- execute o comando npx react-native-asset
+- faça novamente o build da aplicação com npm start e npm run android

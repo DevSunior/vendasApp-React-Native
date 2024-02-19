@@ -4,7 +4,7 @@ import { Icon } from "../icon/Icon";
 
 interface ContainerInputProps {
     isError?: boolean;
-    secureTextEntry?: boolean
+    hasSecureTextEntry?: boolean
 }
 
 export const ContainerInput = styled.TextInput<ContainerInputProps>`
@@ -18,6 +18,8 @@ export const ContainerInput = styled.TextInput<ContainerInputProps>`
     border-color: ${(props) => (props.isError ?
         theme.colors.orangeTheme.orange80 :
         theme.colors.grayTheme.gray80)};
+
+    padding-right: ${(props) => (props.hasSecureTextEntry ? '55px' : '15px')};
 `;
 
 export const IconEye = styled(Icon)`

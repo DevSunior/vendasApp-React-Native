@@ -8,12 +8,13 @@ import { theme } from "../../themes/theme";
 import { useState } from "react";
 
 interface InputProps extends TextInputProps {
-    title?: string,
-    errorMessage?: string
-    secureTextEntry?: boolean
+    title?: string;
+    errorMessage?: string;
+    secureTextEntry?: boolean;
+    margin?: string;
 }
 
-const Input = ({title, errorMessage, secureTextEntry, ...props}: InputProps) => {
+const Input = ({title, errorMessage, secureTextEntry, margin, ...props}: InputProps) => {
 
     const [currentSecure, setCurrentSecure] = useState<boolean>(!!secureTextEntry);
 
@@ -22,7 +23,7 @@ const Input = ({title, errorMessage, secureTextEntry, ...props}: InputProps) => 
     }
 
     return (
-        <DisplayFlexColumn>
+        <DisplayFlexColumn customMargin={margin}>
             {title && (
                 <Text
                 margin="0px 0px 4px 8px"
@@ -38,6 +39,7 @@ const Input = ({title, errorMessage, secureTextEntry, ...props}: InputProps) => 
                 {...props}
                 isError={!!errorMessage}
                 secureTextEntry={currentSecure}
+                hasSecureTextEntry={secureTextEntry}
                 />
                 {secureTextEntry && <IconEye
                                     onPress={handleOnPressEye}

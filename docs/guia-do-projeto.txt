@@ -68,3 +68,6 @@ export const Icon = createIconSetFromIcoMoon(icoMoonConfig);
 
 - execute o comando npx react-native-asset
 - faça novamente o build da aplicação com npm start e npm run android
+
+11 - Instalando o axios:
+npm install axios

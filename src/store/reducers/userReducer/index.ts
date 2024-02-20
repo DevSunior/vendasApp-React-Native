@@ -1,17 +1,24 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { PayloadAction, createSlice } from "@reduxjs/toolkit";
+import { UserType } from "../../../shared/types/userType";
+
+interface UserStore {
+    user?: UserType
+}
+
+const initialState: UserStore = {
+    user: undefined
+}
 
 export const userSlice = createSlice({
     name: 'userReducer',
-    initialState: {
-        value: 0,
-    },
+    initialState,
     reducers: {
-        incrementByAmount: (state, action) => {
-            state.value += action.payload;
+        setUserAction: (state, action: PayloadAction<UserType>) => {
+            state.user = action.payload;
         },
     },
 });
 
-export const { incrementByAmount } = userSlice.actions;
+export const { setUserAction } = userSlice.actions;
 
 export default userSlice.reducer;

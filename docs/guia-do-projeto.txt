@@ -71,3 +71,7 @@ export const Icon = createIconSetFromIcoMoon(icoMoonConfig);
 
 11 - Instalando o axios:
 npm install axios
+
+12 - Instalando react redux
+npm install react-redux
+npm install @reduxjs/toolkit react-redux

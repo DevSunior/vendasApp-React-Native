@@ -14,7 +14,7 @@ const Login = () => {
         errorMessage,
         handleOnPress,
         handleOnChangeEmail,
-        handleOnChangePassword
+        handleOnChangePassword,
     }  = useLogin();
 
     return (

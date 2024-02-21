@@ -75,3 +75,7 @@ npm install axios
 12 - Instalando react redux
 npm install react-redux
 npm install @reduxjs/toolkit react-redux
+
+13 - Instalando o react navigation
+npm install @react-navigation/native @react-navigation/native-stack
+npm install react-native-screens react-native-safe-area-context
